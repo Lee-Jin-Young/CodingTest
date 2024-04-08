@@ -63,9 +63,7 @@ public class Main {
                 for (int i = graph.get(vertex).size() - 1; i >= 0; i--) {
                     int next = graph.get(vertex).get(i);
 
-                    if (!isVisited[next]) {
-                        stack.push(next);
-                    }
+                    stack.push(next);
                 }
             }
 
